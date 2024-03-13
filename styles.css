@@ -38,6 +38,12 @@ header nav ul li a {
     font-family: cambria;
 }
 
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #faf0b9;
+}
 .section-1 {
     background-color: #FFD1DC;
     display: flex;
