@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ol, 
+ul{
+list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    background-color: #FFC0CB;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.12em solid #FF69B4 ;
+    font-size: 0.7em;
+}
+
+header a i{
+color:#C71585;
+font-size: 3em;
+padding: 0.2em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+header nav ul li a {
+    color: #FF007F;
+    font-size: 1.8em;
+    font-family: cambria;
+}
+
+.section-1 {
+    background-color: #FFD1DC;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.section-1 .acerca-imagen {
+    border: solid white ;
+}
+
+.section-2 img {
+    width: 100%;
+}
+
+footer {
+    background-color:#C8A2C8;
+    padding: 0.8em;
+    display: flex;
+}
+
+h3 {
+    color: #8A2BE2; 
+}
+
+.section-3 {
+    display: flex;
+}
+
+.section-3 img {
+    border-radius: 30px;
+}
+
+h4 {
+    color: #FF007F;
+}
+
+/* MENU*/
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: blue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        background-color: cadetblue;
+    }
+    
+    .section-1 {
+        flex-wrap: wrap;
+        align-items: center; }
+   
+    .section-3 {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .checkbtn {
+        display: block;
+    } 
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        text-align: center;
+
+        top: 70px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size:20px ;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: whitesmoke;
+    }
+}
+
+.contacto   {
+    margin: 0;
+    padding: 0;
+    border: #730f8b 2.5px dotted ;
+    box-sizing: border-box;
+    color: gray;
+    background-color: rgba(243, 186, 231, 0.493);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

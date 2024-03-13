@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <script src="https://kit.fontawesome.com/cc14403b38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <a href="index.html"><i class="fa-solid fa-gamepad"></i></a>
+            <nav>
+                <h1 class="logo"></h1>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>  
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Acerca de mi</a></li>
+                    <li><a href="index.html">Trabajos</a></li>
+                    <li><a href="index.html">Servicios</a></li>
+                    <li><a href="index.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="seccion principal">
+            <section class="section-1"> 
+                <div class="acerca-de">
+                    <h2>Acerca de mi</h2>
+                    <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                    <p class="parrafo2">Me llamo Dalushka, pero me pueden decir Dalu; vivo en Lima,Perú. Tengo un perro
+                    salchicha llamado Baileys, me gusta compartir mi día a día con él. Quisiera aprender a programar 
+                    porque junto con mi mami tenemos un emprendimiento de ropa que espero yo misma poder crear la página 
+                    web para aumentar nuestras ventas y tener un mayor alcance.
+                    </p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="PelitoBely y yo.jpeg" alt="imagen personal" width=200em height=250em>
+                </div>
+
+            </section>
+            <section class="section-2">
+                <img src="CHIMOSS BOUTIQUE LOGO 4.png" alt="imagen de carrusel" width=150em height=450em>
+            </section>
+
+            <h2>CATEGORIAS</h2>
+
+            <section class="section-3">
+                
+                <div class="titulo1">
+                    <h4>BILLETERAS</h4>
+                    <img src="MK-BILLETERA.jpeg" alt="imagen de billetera MK" width=340em height=280em>
+                    <p class="parrafo-categoria">Encuentra las billeteras de tus marcas favoritas, contamos con modelos variados y de las marcas más populares. Puedes buscar por marca, color o precio.</p>
+                </div>
+
+                <div class="titulo2">
+                    <h4>LENTES</h4>
+                    <img src="LENTES.jpeg" alt="imagen de lentes Champion" width=340em height=280em>
+                    <p class="parrafo-categoria">Encuentra los lentes de tus marcas favoritas, contamos con modelos variados y de las marcas más populares. Puedes buscar por marca, color, precio o genero.</p>
+                </div>
+
+                <div class="titulo3">
+                    <h4>CARTERAS</h4>
+                    <img src="GUESS-CARTERA.jpeg" alt="imagen de cartera Guess" width=340em height=280em>
+                    <p class="parrafo-categoria">Encuentra las carteras de tus marcas favoritas, contamos con modelos variados y de las marcas más populares. Puedes buscar por marca, color o precio.</p>
+                </div>
+            </div>
+
+            </section>
+        </main>
+
+        
+
+        <div class="contacto">
+            <h2 class="contactanos">CONTACTANOS</h2>
+    
+            <form action="" method="get" class="formulario" id="form">
+
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email"
+                placeholder="dalushka27@gmail.com"
+                required>
+            </div>
+
+            <div class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+
+            <p class="alertas" id="alertas"></p>
+            </form>
+        </div>
+
+        <footer>
+            <div class="redes sociales"> 
+             <h3>Redes Sociales</h3>
+             <ul>
+                <li><a href="https://www.instagram.com/dalushka26/">Instagram personal</a></li>
+                <li><a href="https://www.instagram.com/chimoss_boutique/">Instagram CHIMOSS BOUTIQUE</a></li>
+             </ul>
+            </div>
+        </footer> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
